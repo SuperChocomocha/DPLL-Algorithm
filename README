@@ -1,0 +1,15 @@
+Max Guo
+November 21, 2011
+DPLL Algorithm
+
+TODO: - currently will always return an assignment mapping
+            regardless of whether or not the mapping actually satisfies
+            the CNF
+      - only returns True assignments, False assignments left out of map
+
+USAGE: - no main, so through ghci
+       - :l Sat
+       - working example: dpll (CNF [[1], [2, -1]])
+       - broken example: dpll (CNF [[1], [2, -1], [-1]])
+       - input assumed to already be in CNF
+             CNF [[1], [2, -1]] is A ^ (B v ~A)
